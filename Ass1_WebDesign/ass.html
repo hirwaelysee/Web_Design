@@ -1,0 +1,353 @@
+<!-- Names & ID 
+    Elysee Hirwa 29058
+    Mark Rwabuneza 28750
+    Fabrice Imena 29523
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemigo Hotel</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color:#f4f4f4;
+            line-height:1.6;
+        }
+
+        header{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        header img{
+            width:100%;
+            max-height:300px;
+            object-fit:cover;
+            margin-top:10px;
+            border-radius:5px;
+        }
+
+        nav{
+            background:#00509e;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            justify-content:center;
+        }
+
+        nav ul li{
+            margin:0 15px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            display:block;
+            padding:15px;
+            font-weight:bold;
+        }
+
+        nav ul li a:hover{
+            background:#003366;
+            text-decoration: underline;
+        }
+
+        .container{
+            display:flex;
+            flex-wrap:wrap;
+            padding:20px;
+            gap:20px;
+        }
+
+        main{
+            flex:3;
+            background:white;
+            padding:20px;
+            border-radius:8px;
+        }
+
+        aside{
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background:#e9ecef;
+            padding:20px;
+            border-radius:8px;
+        }
+
+        section{
+            margin-bottom:30px;
+        }
+        section img{
+            height: 300px; 
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        article{
+            margin-bottom:20px;
+            padding:5px;
+            border:1px solid #ddd;
+            border-radius:8px;
+        }
+
+        article img{
+            width:100%;
+            max-width:500px;
+            height:250px;
+            object-fit:cover;
+            border-radius:5px;
+            margin:10px 0;
+        }
+
+        aside ul{
+            margin-left:20px;
+            list-style-type: none;
+            margin: 0;
+        }
+        aside .quick-links{
+            display: flex;
+            justify-content: flex-start;
+            gap: 0 50px;
+        }
+        aside .quick-links a{
+            text-decoration: none;
+            color: #4251d1;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        footer{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:20px;
+        }
+
+        .social-links a{
+            color:white;
+            text-decoration:none;
+            margin:0 10px;
+        }
+        .social-links a:hover{
+            text-decoration: underline;
+            color: rgb(211, 151, 151);
+        }
+
+        @media(max-width:768px){
+            .container{
+                flex-direction:column;
+            }
+
+            nav ul{
+                flex-direction:column;
+                text-align:center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+         <h1>Grand Horizon Hotel</h1> 
+            <p><em>Luxury stays, unforgettable memories.</em></p> 
+
+            <img src="image1.jpg" 
+                alt="Grand Horizon Hotel Exterior"
+            >
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Rooms</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+
+        <section>
+            <section>
+                <img src="deluxe.png" 
+                    alt="Comfortable Standard Room"
+                >
+
+                <h2>Our Rooms</h2>
+
+                <article>
+                    <h3>Standard Room</h3>
+
+                    <p>
+                        Enjoy a <strong>comfortable</strong> and 
+                        <em>affordable</em> stay with modern amenities, 
+                        free WiFi, and a relaxing atmosphere.
+                    </p> 
+
+                    <p>
+                        <mark>Price: $120 per night</mark> 
+                    </p> 
+                </article>
+
+                <article>
+                    <h3>Deluxe Suite</h3>
+
+                    <p>
+                        Experience <b>luxury</b> with a spacious living
+                        area, premium furnishings, and a stunning city view.
+                    </p>
+
+                    <p>
+                        <mark>Price: $250 per night</mark>
+                    </p>
+                </article>
+
+
+            </section>
+
+            
+            <section>
+                <img src="service-image.png" 
+                    alt="Comfortable Standard Room"
+                >
+                <h2>Our Services</h2>
+
+                <article>
+                    <h3>Free WiFi & Business Center</h3>
+
+                    <p>
+                        Stay connected with <strong>high-speed internet</strong>
+                        throughout the hotel and access our business facilities.
+                    </p>
+                </article>
+
+
+                <article>
+                    <h3>Swimming Pool & Airport Shuttle</h3>
+
+                    <p>
+                        Relax by our pool and enjoy our
+                        <u>convenient airport shuttle service</u>
+                        available daily.
+                    </p>
+
+                    <small>Service available 24/7 for hotel guests.</small>
+                </article>
+
+            </section>
+
+        </section>
+        
+        <aside>
+
+            <h2>About Our Hotel</h2>
+
+            <p>
+                Welcome to <strong>Grand Horizon Hotel</strong>, where comfort meets
+                elegance. Our hotel is dedicated to providing guests with an
+                <em>unforgettable hospitality experience</em> through exceptional
+                service, luxurious accommodations, and world-class facilities.
+            </p>
+
+            <p>
+                Located in a prime destination, Grand Horizon Hotel offers
+                <b>modern rooms</b>, fine dining, recreational facilities, and
+                personalized guest services designed to make every stay memorable.
+            </p>
+
+            <br>
+
+            <h2>Why Choose Us?</h2>
+
+            <ul>
+                <li>✔ Spacious and comfortable rooms</li>
+                <li>✔ Free high-speed WiFi</li>
+                <li>✔ 24/7 customer support</li>
+                <li>✔ Airport shuttle service</li>
+                <li>✔ Swimming pool and fitness center</li>
+                <li>✔ Award-winning restaurant</li>
+            </ul>
+
+            <br>
+
+            <h2>Quick Links</h2>
+
+            <ul class="quick-links">
+                <li><a href="#">Book Now</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+
+            <br>
+
+            <h2>Guest Reviews</h2>
+
+            <p>
+                <i>"Excellent service and beautiful rooms. The staff made our stay
+                truly enjoyable."</i>
+            </p>
+
+            <p>
+                <i>"A perfect destination for family vacations and business trips.
+                Highly recommended!"</i>
+            </p>
+
+            <br>
+
+            <h2>Special Offers</h2>
+
+            <p>
+                <mark><em>20% discount</em></mark> on bookings made at least 30 days in
+                advance.
+            </p>
+
+            <p>
+                Stay for <strong>three nights</strong> and receive a complimentary
+                breakfast package for two guests.
+            </p>
+
+            <br>
+
+            <h2>Contact Information</h2>
+
+            <p><strong>Phone:</strong> +250 788 123 456</p>
+            <p><strong>Email:</strong> info@grandhorizonhotel.com</p>
+            <p><strong>Address:</strong> 25 Skyline Avenue, Kigali, Rwanda</p>
+
+        </aside>
+
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Grand Horizon Hotel. All rights reserved.</p>
+
+        <div class="social-links">
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+</body>
+</html>
+
