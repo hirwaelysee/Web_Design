@@ -1,0 +1,97 @@
+/* =========================================
+   Reservation Form Container
+   ========================================= */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* =========================================
+   Form Elements
+   ========================================= */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit; /* Ensures the font matches the body text */
+}
+
+/* Enhancing accessibility and user experience */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* =========================================
+   Flexbox Row Layout for Side-by-Side Fields
+   ========================================= */
+.form-row {
+    display: flex;
+    gap: 20px; /* Creates space between the two half-width columns */
+}
+
+.half-width {
+    flex: 1; /* Tells the element to take up equal space in the row */
+}
+
+/* =========================================
+   Submit Button
+   ========================================= */
+.submit-btn {
+    background-color: #2ecc71;
+    color: #ffffff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #27ae60;
+}
+
+/* =========================================
+   Responsive Adjustments for Mobile
+   ========================================= */
+@media (max-width: 600px) {
+    /* Stack the side-by-side fields on top of each other on small screens */
+    .form-row {
+        flex-direction: column;
+        gap: 0; 
+    }
+}
