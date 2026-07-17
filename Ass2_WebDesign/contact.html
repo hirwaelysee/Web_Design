@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hotel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="home_page.html">Home</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="contact-us">
+            <h1>Contact Us</h1>
+            <p>If you have any inquiries, please fill out the form below and we will get back to you.</p>
+        </div>
+    
+        <div class="contact-form-container">
+            <form id="contactForm" action="#" method="POST">
+                
+                <div class="form-group">
+                    <label for="contactName">Full Name:</label>
+                    <input type="text" id="contactName" name="contactName" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">Email Address:</label>
+                    <input type="email" id="contactEmail" name="contactEmail" placeholder="example@domain.com" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactPhone">Phone Number:</label>
+                    <input type="tel" id="contactPhone" name="contactPhone" placeholder="e.g., 1234567890" required>
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="contactCity">City:</label>
+                        <input type="text" id="contactCity" name="contactCity" required>
+                        <span class="error-message" id="cityError"></span>
+                    </div>
+
+                    <div class="form-group half-width">
+                        <label for="contactCountry">Country:</label>
+                        <input type="text" id="contactCountry" name="contactCountry" required>
+                        <span class="error-message" id="countryError"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactAge">Age:</label>
+                    <input type="number" id="contactAge" name="contactAge" min="1" required>
+                    <span class="error-message" id="ageError"></span>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn" id="contactSubmitBtn">Submit Inquiry</button>
+                
+                <!-- General success message area -->
+                <div id="formSuccessMessage" class="success-message"></div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Link the JavaScript file that will handle form validation -->
+    <script src="js/contact.js"></script>
+</body>
+</html>

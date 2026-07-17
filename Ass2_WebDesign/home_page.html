@@ -1,0 +1,64 @@
+<!--Byiringiro Eric 192034-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   
+    <!-- Link to css file -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Home page</title>    
+</head>
+<body>
+    <header>
+        <p>Put your logo and other content here</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home_page.html"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li class="dropdown">
+                <a href="#"><img src="./Assets/icons8-room-48.png" alt="rooms-icon" style="width: 20px; color: white;">Rooms</a>
+                <ul class="submenu">
+                    <li><a href="#">Standard</a></li>
+                    <li><a href="#">General</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa-brands fa-whmcs"></i>Services</a></li>
+            <li><a href="bookings.html"><img src="./Assets/icons8-booking-30.png" alt="booking-icons" style="width: 20px;">Bookings</a></li>
+            <li><a href="#"><i class="fa-solid fa-phone"></i>Contact us</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <section>
+            <h3>JavaScript</h3>
+            <article style="text-align: center;">
+                <h3>What JavaScript can do?</h3>
+                <p id="demo">JavaScript can change HTML content</p>
+                <button id="btn">Click Me</button>
+            </article>
+        </section>
+        <section>
+            <h3>Title for section</h3>
+            <article style="text-align: center;">
+                <h3>Instructions for voting</h3>
+                <input type="text" name="age" id="age" placeholder="Enter your age"><br> <br>
+                <button id="btn2">Check Eligibility</button>
+                <p id="result"></p>
+            </article>
+        </section>
+        <aside>
+            <h4>Quick links</h4>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; right reserved for us</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@js-temporal/polyfill/dist/index.umd.js"></script>
+    <script src="./js/home.js"></script>
+</body>
+</html>
