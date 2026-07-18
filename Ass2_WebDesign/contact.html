@@ -30,7 +30,7 @@
                 
                 <div class="form-group">
                     <label for="contactName">Full Name:</label>
-                    <input type="text" id="contactName" name="contactName" required>
+                    <input type="text" id="contactName" name="contactName" placeholder="Enter your fullName" required>
                     <span class="error-message" id="nameError"></span>
                 </div>
 
@@ -42,40 +42,37 @@
 
                 <div class="form-group">
                     <label for="contactPhone">Phone Number:</label>
-                    <input type="tel" id="contactPhone" name="contactPhone" placeholder="e.g., 1234567890" required>
+                    <input type="tel" id="contactPhone" name="contactPhone" placeholder="ex: 1234567890" required>
                     <span class="error-message" id="phoneError"></span>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group half-width">
                         <label for="contactCity">City:</label>
-                        <input type="text" id="contactCity" name="contactCity" required>
+                        <input type="text" id="contactCity" name="contactCity" placeholder="ex: Kigali" required>
                         <span class="error-message" id="cityError"></span>
                     </div>
 
                     <div class="form-group half-width">
                         <label for="contactCountry">Country:</label>
-                        <input type="text" id="contactCountry" name="contactCountry" required>
+                        <input type="text" id="contactCountry" name="contactCountry" placeholder="ex: Rwanda" required>
                         <span class="error-message" id="countryError"></span>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="contactAge">Age:</label>
-                    <input type="number" id="contactAge" name="contactAge" min="1" required>
+                    <input type="number" id="contactAge" name="contactAge" min="1" placeholder="ex: 20" required>
                     <span class="error-message" id="ageError"></span>
                 </div>
 
-                <!-- Submit Button -->
                 <button type="submit" class="submit-btn" id="contactSubmitBtn">Submit Inquiry</button>
                 
-                <!-- General success message area -->
                 <div id="formSuccessMessage" class="success-message"></div>
             </form>
         </div>
     </main>
 
-    <!-- Link the JavaScript file that will handle form validation -->
     <script src="js/contact.js"></script>
 </body>
 </html>
