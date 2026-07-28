@@ -226,6 +226,7 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+
     .nav-menu {
         flex-direction: column;
         gap: 10px;
@@ -239,11 +240,48 @@ body {
         grid-template-columns: 1fr;
     }
 
+    /* --- 1. HERO SECTION (HOME PAGE) --- */
     .hero-section {
-        padding: 30px;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 25px 20px;
+    }
+
+    .hero-section img {
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
     }
 
     .hero-section h2 {
+        font-size: 22px;
+    }
+
+    /* --- 2. SIGN-UP CONTAINER (SPLIT LAYOUT) --- */
+    .single-column-layout {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 15px;
+        border-radius: 8px;
+    }
+
+    .signup-image {
+        flex: 0 0 200px;
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .signup-image img {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .signup-container {
+        width: 100%;
+        padding: 30px 20px;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .signup-container h2 {
         font-size: 22px;
     }
 }
