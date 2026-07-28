@@ -11,11 +11,13 @@ if (session_status() == PHP_SESSION_NONE) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up - User Profile System</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
     <!-- HEADER -->
     <header class="header">
+        <img src="images/logo.jpg" alt="System Logo" class="header-logo" />
         <div class="container">
             <h1>User Profile System</h1>
             <p class="tagline">Manage your profile with ease</p>
@@ -26,18 +28,23 @@ if (session_status() == PHP_SESSION_NONE) {
     <nav class="navbar">
         <div class="container">
             <ul class="nav-menu">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="signup.php" class="active">Sign Up</a></li>
-                <li><a href="login.php">Login</a></li>
-                <li><a href="profile.php">Profile</a></li>
-                <li><a href="logout.php">Logout</a></li>
+                <li><a href="index.php"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="signup.php" class="active"><i class="fa-solid fa-user-plus"></i> Sign Up</a></li>
+                <li><a href="login.php"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+                <li><a href="profile.php"><i class="fa-solid fa-user"></i> Profile</a></li>
+                <li><a href="logout.php"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- MAIN CONTENT -->
     <main class="main-content">
-        <div class="container">
+        <div class="container single-column-layout">
+
+            <!-- the image section -->
+            <div class="signup-image">
+                <img src="images/signup2.avif" alt="Sign up illustration">
+            </div>
 
             <!-- ARTICLE: Sign-Up Form -->
             <article class="signup-container">

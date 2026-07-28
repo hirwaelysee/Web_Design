@@ -37,11 +37,13 @@ $user = mysqli_fetch_assoc($result);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile - User Profile System</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
     <!-- HEADER -->
     <header class="header">
+        <img src="images/logo.jpg" alt="System Logo" class="header-logo" />
         <div class="container">
             <h1>User Profile System</h1>
             <p class="tagline">Manage your profile with ease</p>
@@ -52,11 +54,11 @@ $user = mysqli_fetch_assoc($result);
     <nav class="navbar">
         <div class="container">
             <ul class="nav-menu">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="signup.php">Sign Up</a></li>
-                <li><a href="login.php">Login</a></li>
-                <li><a href="profile.php" class="active">Profile</a></li>
-                <li><a href="logout.php">Logout</a></li>
+                <li><a href="index.php"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="signup.php"><i class="fa-solid fa-user-plus"></i> Sign Up</a></li>
+                <li><a href="login.php"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+                <li><a href="profile.php" class="active"><i class="fa-solid fa-user"></i> Profile</a></li>
+                <li><a href="logout.php"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
             </ul>
         </div>
     </nav>
@@ -80,6 +82,7 @@ $user = mysqli_fetch_assoc($result);
 
                 <!-- Welcome Message -->
                 <div class="welcome-section">
+                    <img src="images/profile.png" alt="Profile illustration" />
                     <h2>Welcome, <?php echo $user['full_name']; ?>!</h2>
                     <p class="welcome-text">Here is your profile information</p>
                 </div>
