@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit();
     }
 
-    // Hash the password
+    // Hash the password for security purpose.
     $hashed_password = password_hash($password, PASSWORD_BCRYPT);
 
     // Insert user into database
@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_SESSION['email'] = $email;
         $_SESSION['full_name'] = $full_name;
         
-        // Success - redirect to profile
+        // Success redirect to profile
         header('Location: profile.php');
         exit();
         

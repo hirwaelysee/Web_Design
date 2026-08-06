@@ -16,7 +16,9 @@ $user_id = $_SESSION['user_id'];
 
 // Get current user data from database
 $query = "SELECT full_name, email, username FROM users WHERE id = '$user_id'";
+// this sends command to the dbs $conn is connection created in ur db.php
 $result = mysqli_query($conn, $query);
+// the db gives back raw data in form of an array.
 $user = mysqli_fetch_assoc($result);
 
 // Check if form was submitted
